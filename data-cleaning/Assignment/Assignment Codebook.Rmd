@@ -1,7 +1,7 @@
 ---
 title: "Assignment Codebook"
-author: "L??aud Le Bacq"
-date: "1/22/2018"
+author: "Leaud Le Bacq"
+date: "1/27/2018"
 output: html_document
 ---
 
@@ -11,79 +11,624 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Codebook
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Hereafter is the code book of the final data set contained in the file named "output_assignment.txt".
+This final data is the result of the assignment for the coursera course : "Getting and Cleaning Data"
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+#"activitylabel"
 
-```{r cars}
-names(finaloutput)
-```
+    Storage mode: integer
+     Factor with 6 levels
+     
+     Each member of the group performed one or more activity.
+     The "N" below shows the times a member performed the activity
+        Values and labels    N    Percent 
+                                          
+   1 'LAYING'                6   17.1     
+   2 'SITTING'               6   17.1     
+   3 'STANDING'              6   17.1     
+   4 'WALKING'               6   17.1     
+   5 'WALKING_DOWNSTAIRS'    6   17.1     
+   6 'WALKING_UPSTAIRS'      5   14.3   
+   
+-------------------------------------------
+#"subject"
 
-"activitylabel"               
-"subject"                     
-"tBodyAcc-mean()-X"          
-"tBodyAcc-mean()-Y"           
-"tBodyAcc-mean()-Z"           
-"tBodyAcc-std()-X"           
-"tBodyAcc-std()-Y"            
-"tBodyAcc-std()-Z"            
-"tGravityAcc-mean()-X"       
-"tGravityAcc-mean()-Y"        
-"tGravityAcc-mean()-Z"        
-"tGravityAcc-std()-X"        
-"tGravityAcc-std()-Y"         
-"tGravityAcc-std()-Z"         
-"tBodyAccJerk-mean()-X"      
-"tBodyAccJerk-mean()-Y"       
-"tBodyAccJerk-mean()-Z"       
-"tBodyAccJerk-std()-X"       
-"tBodyAccJerk-std()-Y"        
-"tBodyAccJerk-std()-Z"        
-"tBodyGyro-mean()-X"         
-"tBodyGyro-mean()-Y"          
-"tBodyGyro-mean()-Z"          
-"tBodyGyro-std()-X"          
-"tBodyGyro-std()-Y"           
-"tBodyGyro-std()-Z"           
-"tBodyGyroJerk-mean()-X"     
-"tBodyGyroJerk-mean()-Y"      
-"tBodyGyroJerk-mean()-Z"      
-"tBodyGyroJerk-std()-X"      
-"tBodyGyroJerk-std()-Y"       
-"tBodyGyroJerk-std()-Z"       
-"tBodyAccMag-mean()"         
-"tBodyAccMag-std()"          
-"tGravityAccMag-mean()"       
-"tGravityAccMag-std()"       
-"tBodyAccJerkMag-mean()"      
-"tBodyAccJerkMag-std()"       
-"tBodyGyroMag-mean()"        
-"tBodyGyroMag-std()"          
-"tBodyGyroJerkMag-mean()"     
-"tBodyGyroJerkMag-std()"     
-"fBodyAcc-mean()-X"           
-"fBodyAcc-mean()-Y"           
-"fBodyAcc-mean()-Z"          
-"fBodyAcc-std()-X"            
-"fBodyAcc-std()-Y"            
-"fBodyAcc-std()-Z"           
-"fBodyAccJerk-mean()-X"       
-"fBodyAccJerk-mean()-Y"       
-"fBodyAccJerk-mean()-Z"      
-"fBodyAccJerk-std()-X"        
-"fBodyAccJerk-std()-Y"        
-"fBodyAccJerk-std()-Z"       
-"fBodyGyro-mean()-X"          
-"fBodyGyro-mean()-Y"          
-"fBodyGyro-mean()-Z"         
-"fBodyGyro-std()-X"           
-"fBodyGyro-std()-Y"           
-"fBodyGyro-std()-Z"          
-"fBodyAccMag-mean()"          
-"fBodyAccMag-std()"           
-"fBodyBodyAccJerkMag-mean()" 
-"fBodyBodyAccJerkMag-std()"   
-"fBodyBodyGyroMag-mean()"     
-"fBodyBodyGyroMag-std()"     
-"fBodyBodyGyroJerkMag-mean()" 
-"fBodyBodyGyroJerkMag-std()" 
+  Storage mode: integer
+  from 1 to 30
+  ID of the member who participated to the experiment
+  
+-------------------------------------------
+#"tBodyAcc-mean()-X"     
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : acceleration
+  axis : X
+-------------------------------------------
+#"tBodyAcc-mean()-Y"    
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  mesurement : acceleration
+  axis : Y
+-------------------------------------------
+#"tBodyAcc-mean()-Z"    
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : acceleration
+  axis : Z
+-------------------------------------------
+#"tBodyAcc-std()-X"       
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : acceleration
+  axis : X
+-------------------------------------------
+#"tBodyAcc-std()-Y"                 
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : acceleration
+  axis : Y
+-------------------------------------------
+#"tBodyAcc-std()-Z"               
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : acceleration
+  axis : Z  
+-------------------------------------------
+#"tGravityAcc-mean()-X"            
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : gravity
+  measurement : acceleration
+  axis : X
+-------------------------------------------
+#"tGravityAcc-mean()-Y"        
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : gravity
+  measurement : acceleration
+  axis : Y
+-------------------------------------------
+#"tGravityAcc-mean()-Z"        
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : gravity
+  measurement : acceleration
+  axis : Z
+-------------------------------------------
+#"tGravityAcc-std()-X"        
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : gravity
+  measurement : acceleration
+  axis : X
+-------------------------------------------
+#"tGravityAcc-std()-Y"         
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : gravity
+  measurement : acceleration
+  axis : Y
+-------------------------------------------
+#"tGravityAcc-std()-Z"         
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : gravity
+  measurement : acceleration
+  axis : Z
+-------------------------------------------
+#"tBodyAccJerk-mean()-X"      
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : X
+-------------------------------------------
+#"tBodyAccJerk-mean()-Y"       
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Y
+-------------------------------------------
+#"tBodyAccJerk-mean()-Z"       
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Z
+-------------------------------------------
+#"tBodyAccJerk-std()-X"       
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : X
+-------------------------------------------
+#tBodyAccJerk-std()-Y"        
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Y
+-------------------------------------------
+#"tBodyAccJerk-std()-Z"        
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Z
+-------------------------------------------
+#"tBodyGyro-mean()-X"         
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : Gyro which is the angular volocity
+  axis : X
+-------------------------------------------
+#"tBodyGyro-mean()-Y"          
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : Gyro which is the angular volocity
+  axis : Y
+-------------------------------------------
+#"tBodyGyro-mean()-Z"          
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : Gyro which is the angular volocity
+  axis : Z
+-------------------------------------------
+#"tBodyGyro-std()-X"          
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : Gyro which is the angular volocity
+  axis : X
+-------------------------------------------
+#"tBodyGyro-std()-Y"           
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : Gyro which is the angular volocity
+  axis : Y
+-------------------------------------------
+#"tBodyGyro-std()-Z"           
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : Gyro which is the angular volocity
+  axis : Z
+-------------------------------------------
+#"tBodyGyroJerk-mean()-X"     
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerk which is the derivation in time of the angular volocity
+  axis : X
+-------------------------------------------
+#"tBodyGyroJerk-mean()-Y"      
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerk which is the derivation in time of the angular volocity
+  axis : Y
+-------------------------------------------
+#"tBodyGyroJerk-mean()-Z"      
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerk which is the derivation in time of the angular volocity
+  axis : Z
+-------------------------------------------
+#"tBodyGyroJerk-std()-X"      
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerk which is the derivation in time of the angular volocity
+  axis : X
+-------------------------------------------
+#tBodyGyroJerk-std()-Y"       
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerk which is the derivation in time of the angular volocity
+  axis : Y
+-------------------------------------------
+#tBodyGyroJerk-std()-Z"       
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerk which is the derivation in time of the angular volocity
+  axis : Z
+-------------------------------------------
+#"tBodyAccMag-mean()"         
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : AccMag which is the magnitude of the acceleration signal
+  axis : all
+-------------------------------------------
+#"tBodyAccMag-std()"          
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : AccMag which is the magnitude of the acceleration signal
+  axis : all
+-------------------------------------------
+#"tGravityAccMag-mean()"       
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : gravity
+  measurement : AccMag which is the magnitude of the acceleration signal
+  axis : all
+-------------------------------------------
+#"tGravityAccMag-std()"       
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : gravity
+  measurement : AccMag which is the magnitude of the acceleration signal
+  axis : all
+-------------------------------------------
+#"tBodyAccJerkMag-mean()"      
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerkMag which is the magnitude of the derivation in time of the acceleration signal
+  axis : all
+-------------------------------------------
+#"tBodyAccJerkMag-std()"       
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : AccJerkMag which is the magnitude of the derivation in time of the acceleration signal
+  axis : all
+-------------------------------------------
+#"tBodyGyroMag-mean()"        
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroMag which is the magnitude of the angular velocity
+  axis : all
+-------------------------------------------
+#"tBodyGyroMag-std()"          
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroMag which is the magnitude of the angular velocity
+  axis : all
+-------------------------------------------
+#"tBodyGyroJerkMag-mean()"     
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerkMag which is the magnitude of the derivation in time of the angular velocity
+  axis : all
+-------------------------------------------
+#"tBodyGyroJerkMag-std()"     
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : time
+  signal part : body
+  measurement : GyroJerkMag which is the magnitude of the derivation in time of the angular velocity
+  axis : all
+-------------------------------------------
+#"fBodyAcc-mean()-X"           
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : acceleration
+  axis : X
+-------------------------------------------
+#"fBodyAcc-mean()-Y"                
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : acceleration
+  axis : Y
+-------------------------------------------
+#"fBodyAcc-mean()-Z"                
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : acceleration
+  axis : Z
+-------------------------------------------
+#"fBodyAcc-std()-X"                 
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : acceleration
+  axis : X
+-------------------------------------------
+#"fBodyAcc-std()-Y"                 
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : acceleration
+  axis : Y
+-------------------------------------------
+#"fBodyAcc-std()-Z"                
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : acceleration
+  axis : Z
+-------------------------------------------
+#"fBodyAccJerk-mean()-X"          
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : X
+-------------------------------------------
+#"fBodyAccJerk-mean()-Y"       
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Y
+-------------------------------------------
+#"fBodyAccJerk-mean()-Z"      
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Z
+-------------------------------------------
+#"fBodyAccJerk-std()-X"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : X
+-------------------------------------------
+#"fBodyAccJerk-std()-Y"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Y
+-------------------------------------------
+#"fBodyAccJerk-std()-Z"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccJerk which is the derivation in time of the acceleration
+  axis : Z
+-------------------------------------------
+#"fBodyGyro-mean()-X"
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : Gyro which is the angular velocity
+  axis : X
+-------------------------------------------
+#"fBodyGyro-mean()-Y"
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : Gyro which is the angular velocity
+  axis : Y
+-------------------------------------------
+#"fBodyGyro-mean()-Z"
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : Gyro which is the angular velocity
+  axis : Z
+-------------------------------------------
+#"fBodyGyro-std()-X"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : Gyro which is the angular velocity
+  axis : X
+-------------------------------------------
+#"fBodyGyro-std()-Y"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : Gyro which is the angular velocity
+  axis : Y
+-------------------------------------------
+#"fBodyGyro-std()-Z"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : Gyro which is the angular velocity
+  axis : Z
+-------------------------------------------
+#"fBodyAccMag-mean()"
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccMag which is the magnitude of the acceleration
+  axis : all
+-------------------------------------------
+#"fBodyAccMag-std()"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : AccMag which is the magnitude of the acceleration
+  axis : all
+-------------------------------------------
+#"fBodyBodyAccJerkMag-mean()"
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : BodyAccJerkMag which is the magnitude of the derivation in time of the acceleration
+  axis : all
+-------------------------------------------
+#"fBodyBodyAccJerkMag-std()"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : BodyAccJerkMag which is the magnitude of the derivation in time of the acceleration
+  axis : all
+-------------------------------------------
+#"fBodyBodyGyroMag-mean()"
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : BodyGyroMag which is the magnitude of angular velocity
+  axis : all
+-------------------------------------------
+#"fBodyBodyGyroMag-std()"
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : BodyGyroMag which is the magnitude of angular velocity
+  axis : all
+-------------------------------------------
+#"fBodyBodyGyroJerkMag-mean()" 
+
+  Storage mode: double
+  operator applied to the raw data : mean() which returns the mean of the measurement
+  domain : frequency
+  signal part : body
+  measurement : BodyGyroJerkMag which is the magnitude of the derivation in time of the angular velocity
+  axis : all
+-------------------------------------------
+#"fBodyBodyGyroJerkMag-std()" 
+
+  Storage mode: double
+  operator applied to the raw data : std() which returns the standard deviation of the measurement
+  domain : frequency
+  signal part : body
+  measurement : BodyGyroJerkMag which is the magnitude of the derivation in time of the angular velocity
+  axis : all
+-------------------------------------------

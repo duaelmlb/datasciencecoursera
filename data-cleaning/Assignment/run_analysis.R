@@ -3,6 +3,7 @@
 
 # Package for making the data set tidy
 library(plyr)
+library(dplyr)
 # Package for handling regular expressions
 library(rebus)
 
