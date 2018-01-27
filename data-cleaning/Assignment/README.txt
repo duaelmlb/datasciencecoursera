@@ -36,7 +36,7 @@ The submitted work contains the following files :
 
 - the present 'README.txt'
 
-- 'output_assignment.txt': Final tidy data set produced by the script
+- 'final_output.txt': Final tidy data set produced by the script
 
 - 'run_analysis.R' : R script that does all the actions required by the assignment and creates the final tidy data set.
 
